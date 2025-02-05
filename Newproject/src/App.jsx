@@ -44,6 +44,9 @@ function MyTabs() {
       <Tab.Screen
         name="Profile"
         component={ProfileScreen}
+        options={{
+          headerShown: false,
+        }}
         // options={{
         //   tabBarIcon: ({ size, color }) => <Ionicons name="person" size={size} color={color} />,
         // }}

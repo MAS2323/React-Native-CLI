@@ -10,7 +10,7 @@ import LoginScring from './login/LoginScreen';
 import RegisterScreen from './login/RegisterScreen';
 import SettingsComponets from './screens/components/settingsComponets';
 import UpdateContactScreen from './screens/components/UpdateContactScreen';
-import Ionicons from '@react-native-vector-icons/ionicons';
+// import Ionicons from '@react-native-vector-icons/ionicons';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -28,25 +28,25 @@ function MyTabs() {
       <Tab.Screen
         name="Home"
         component={HomeScreen}
-        options={{
-          tabBarIcon: ({ size, color }) => <Ionicons name="home" size={size} color={color} />,
-        }}
+        // options={{
+        //   tabBarIcon: ({ size, color }) => <Ionicons name="home" size={size} color={color} />,
+        // }}
       />
       <Tab.Screen
         name="Carro"
         component={CarroScreen}
-        options={{
-          tabBarIcon: ({ size, color }) => (
-            <Ionicons name="settings-outline" size={size} color={color} />
-          ),
-        }}
+        // options={{
+        //   tabBarIcon: ({ size, color }) => (
+        //     <Ionicons name="settings-outline" size={size} color={color} />
+        //   ),
+        // }}
       />
       <Tab.Screen
         name="Profile"
         component={ProfileScreen}
-        options={{
-          tabBarIcon: ({ size, color }) => <Ionicons name="person" size={size} color={color} />,
-        }}
+        // options={{
+        //   tabBarIcon: ({ size, color }) => <Ionicons name="person" size={size} color={color} />,
+        // }}
       />
     </Tab.Navigator>
   );
